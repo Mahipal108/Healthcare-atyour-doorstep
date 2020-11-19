@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* #d5d3c4  #514f51 #757575 #747575 */
 /* for navigation bar */
 nav{
     width: 100%;
@@ -11,7 +12,7 @@ nav{
     justify-content: left;
     font-size: 20px;
     border-bottom: 1px solid #e5e5e5;
-    background: #d5d3c4;
+    background: #2e2e2c;
 }
 nav button{
     display: none;
@@ -23,7 +24,7 @@ nav .logo{
 
 }
 nav .logo h1{
-    color: #514f51;
+    color: #f8f4f8;
     font-style: italic;
 }
 
@@ -42,11 +43,11 @@ nav .menu ul:nth-child(2) li{
     position: relative;
     top: -8px;
     left: 140px;
-    color: #757575;
+    color: #fcf5f5;
 }
 nav .menu ul li a{
     text-decoration: none;
-    color: #747575;
+    color: #fcf5f5;
 }
 nav .menu ul li a:hover{
     color: #00ffff;
@@ -95,7 +96,8 @@ nav form .fa{
     top: -40px;
     right: 45px;
     cursor: pointer;
-    color: #757575;
+    /* color: #757575; */
+    color: #fcf5f5;
 }
 .fa-times{
     display: none;
@@ -130,13 +132,13 @@ nav form .fa{
         cursor: pointer;
         border: none;
         outline: none;
-        background: #757575;
+        background: #eceaea;
     }
     nav button:before,
     nav button:after{
         position: absolute;
         content: '';
-        background: #d5d3c4;
+        background: #2e2e2c;
         width: 30px;
         height: 5px;
         top: 5px;
@@ -152,7 +154,7 @@ nav form .fa{
     nav button.expand-icon:before,
     nav button.expand-icon:after{
         transform: rotate(45deg);
-        background: #757575;
+        background: #eceaea;
         top: 10px;
     }
     nav button.expand-icon:after{
@@ -167,7 +169,7 @@ nav form .fa{
         position: absolute;
         width: 100%;
         height: 0;
-        background: #d5d3c4;
+        background: #2e2e2c;
         top: 80px;
         transition: 0.5s;
         overflow: hidden;
