@@ -50,6 +50,10 @@ nav .menu ul li a{
 }
 nav .menu ul li a:hover{
     color: #00ffff;
+    border-bottom: 3px solid rgb(233, 68, 233);
+}
+nav .menu ul li a:active{
+    border-bottom: rgb(238, 91, 238);
 }
 nav form{
     position: absolute;
@@ -104,79 +108,13 @@ nav form .fa{
 }
 
 @media(max-width: 768px) {
-    nav button{
-        display: block;
-        width: 30px;
-        height: 25px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background: #757575;
-    }
-    nav button:before,
-    nav button:after{
-        position: absolute;
-        content: '';
-        background: #d5d3c4;
-        width: 30px;
-        height: 5px;
-        top: 5px;
-        left: 0;
-        transition: 0.5s;
-    }
-    nav button:after{
-        top: 15px;
-    }
-    nav button.expand-icon{
-        background: transparent;
-    }
-    nav button.expand-icon:before,
-    nav button.expand-icon:after{
-        transform: rotate(45deg);
-        background: #757575;
-        top: 10px;
-    }
-    nav button.expand-icon:after{
-        transform:  rotate(-45deg);
-    }
-
     nav .logo{
         font-size: 17px;
         left:22%;
     }
-    nav .menu{
-        position: absolute;
-        width: 100%;
-        height: 0;
-        background: #d5d3c4;
-        top: 80px;
-        transition: 0.5s;
-        overflow: hidden;
-        z-index: 10;
-    }
-    nav .menu.expand-mobile{
-        height: 700px;
-    }
-    nav .menu ul li{
-        float: right;
-        width: 90%;
-        text-align: left;
-    }
     nav form{
         left: 30%;
         width: 65%;
-    }
-    nav .menu ul:nth-child(2) li{
-        top: 0;
-        left: 0;
-    }
-    h4,p{
-        padding: 0;
-        margin: 0;
-        font-size: initial;
     }
     
 }
@@ -392,9 +330,11 @@ nav form .fa{
 }
 
 .more .read-more span{
-	font-weight: 900;
+	font-weight: 900; 
 }
-
+.read-more:hover{
+    color: rgb(205, 207, 216);
+}
 .more .icon-links i{
 	color: #000;
 	font-size: 20px;
