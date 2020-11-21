@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/e6b6d419d1.js"></script>
+    <link rel="stylesheet" href="/Users/MAHIPAL-PC/Desktop/Healthcare-atyour-doorstep/Css/style.css">
 	<title>FAQ's</title>
 	<style type="text/css">
-		li{
+		#faq{
+			padding: 10px;
+		}
+		.faq-content{
+			padding-left: 50px;
+			padding-right: 10px;
+		}
+		.faq-content li{
 			color: green;
+			padding-bottom: 20px;
+			padding-top: 20px;
 			animation-name: question;
 			animation-play-state: alternate;
 			animation-iteration-count: infinite;
@@ -15,8 +28,10 @@
 			from{color: black};
 			to{color: green}
 		}
-		h3{
+		.faq-heading{
 			color: red;
+			padding-left: 20px;
+			padding-top: 20px;
 			animation-name: heading;
 			animation-play-state: alternate;
 			animation-iteration-count: infinite;
@@ -30,10 +45,35 @@
 	</style>
 
 </head>
-<body bgcolor="#e6e6e6">
-	<h1>FAQ's</h1>
-	<h3>Registration</h3>
-	<ul>
+<body>
+	<div>
+		<nav>
+			<button></button>
+			<div class="logo"><h1>Uphealth</h1></div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Production</a></li>
+					<li><a href="#">Blogs</a></li>
+					<li><a href="#">Pages</a></li>
+				</ul>
+				<ul>
+					<li><i class="fa fa-shopping-cart"></i>
+						<li><i class="fa fa-user"></i></li></li>
+				</ul>
+			</div>
+			<form action="">
+				<input type="text" id="search" placeholder="Search here..." link rel="text" href="search.php">
+				<i class="fa fa-search"></i>
+				<i class="fa fa-times"></i>
+			</form>
+		</nav>
+	<div class="section">
+	<h1 id="faq">FAQ's</h1> 
+	<h3 class="faq-heading">Registration</h3>
+	<ul class="faq-content">
 		<li>
 			<h4>How do I register?</h4>
 		</li>
@@ -72,8 +112,8 @@
 		</p>
 		
 	</ul>
-	<h3>Payment</h3>
-	<ul>
+	<h3 class="faq-heading">Payment</h3>
+	<ul class="faq-content">
 		<li>
 			<h4>What are the modes of payment?</h4>
 		</li>
@@ -103,8 +143,8 @@
 			Cash on delivery means that you can pay for your order at the time of order delivery at your doorstep.
 		</p>
 	</ul>
-	<h3>Delivery Related</h3>
-	<ul>
+	<h3 class="faq-heading">Delivery Related</h3>
+	<ul class="faq-content">
 		<li>
 			<h4>When will I receive my order?</h4>
 		</li>
@@ -130,8 +170,8 @@
 			There is no minimum order for delivery but we charge a nominal delivery fee.
 		</p>
 	</ul>
-	<h3>Customer Related</h3>
-	<ul>
+	<h3 class="faq-heading">Customer Related</h3>
+	<ul class="faq-content">
 		<li>
 			<h4>How do I contact customer service?</h4>
 		</li>
@@ -155,8 +195,8 @@
 			2. Other goods : Within 7 days from the delivery date.<br>
 		</p>
 	</ul>
-	<h3>Others</h3>
-	<ul>
+	<h3 class="faq-heading">Others</h3>
+	<ul class="faq-content">
 		<li>
 			<h4>Do you have offline stores?</h4>
 		</li>
@@ -182,8 +222,84 @@
 			If you are unable to find a product that you would like to shop for, please write to us at <a href="mailto: support@uphealth.com">support@uphealth.com</a> and we will try our best to make the product available to you.
 		</p>
 	</ul>
+</div>
+	<div class="footer">
+		<div class="inner-footer">
 
+			<div class="footer-items">
+				<h1 id="foot-logo">Uphealth</h1>
+				<p>
+					Our company aim is to give you the best quality and hygienic products so that you are Fit and Strong after all health is wealth
+				</p>
+			</div>
+
+			<div class="footer-items">
+				<h2 id="links-header">Quick Links</h2>
+				<div class="border"></div>
+				<ul class="footer-list">
+					<a href=""><li>Home</li></a>
+					<a href=""><li>About Us</li></a>
+					<a href=""><li>Services</li></a>
+					<a href=""><li>Portfolio</li></a>
+					<a href=""><li>Contact Us</li></a>
+				</ul>
+			</div>
+
+			<div class="footer-items">
+				<h2 id="links-header">Categories</h2>
+				<div class="border"></div>
+				<ul class="footer-list">
+					<a href=""><li>Skin Diseases</li></a>
+					<a href=""><li>Heart Diseases</li></a>
+					<a href=""><li>Diabetes</li></a>
+					<a href=""><li>Crohn's & Colitis</li></a>
+					<a href=""><li>Allergies & Asthama</li></a>
+				</ul>
+			</div>
+
+			<div class="footer-items">
+				<h2 id="links-header">Contact Us</h2>
+				<div class="border"></div>
+				<ul class="footer-list">
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i>112, Santacruz, Mumbai</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>+91 9930421406</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i>support@uphealth.com</li>
+				</ul>
+				<p>Please Follow us on our social media platform</p>
+				<div class="social-media">
+					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			Copyright &copy; Uphealth 2020. All rights reserved.
+		</div>
+</div>
 </body>
 </html>
-linuxcontainers.org
-binaryplant.com
+<!-- linuxcontainers.org
+binaryplant.com -->
+<script type="text/javascript">
+
+	var  searchIcon = document.querySelector('.fa-search');
+	var  closeIcon = document.querySelector('.fa-times');
+	var  search = document.getElementById('search');
+
+	searchIcon.onclick = ()=>{
+		search.classList.add('expand');
+	}
+	closeIcon.onclick = ()=>{
+		search.classList.remove('expand');
+	}
+
+	var button = document.querySelector('button');
+	var menu = document.querySelector('.menu');
+	button.onclick = ()=>{
+		menu.classList.toggle('expand-mobile');
+		button.classList.toggle('expand-icon');
+
+	}
+</script>

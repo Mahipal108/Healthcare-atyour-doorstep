@@ -14,7 +14,6 @@ nav{
     font-size: 20px;
     border-bottom: 1px solid #e5e5e5;
     background: #2e2e2c;
-    z-index: 10;
 }
 nav button{
     display: none;
@@ -53,7 +52,7 @@ nav .menu ul li a{
 }
 nav .menu ul li a:hover{
     color: #00ffff;
-    /* border-bottom: 3px solid rgb(233, 68, 233); */
+    border-bottom: 3px solid rgb(233, 68, 233);
 }
 nav .menu ul li a:active{
     border-bottom: rgb(238, 91, 238);
@@ -104,20 +103,6 @@ nav form .fa{
 .fa-times{
     display: none;
 }
-.section{
-    width: 100%;
-    background: #fcfbfb;
-    display: flex;
-    justify-content: space-around;
-}
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .sticky {
-    padding-top: 60px;
-  }   */
 @media(max-width: 768px) {
     nav .logo{
         font-size: 17px;
@@ -207,182 +192,12 @@ nav form .fa{
     }
     
 }
-
-/* for carousel */
-.slider{
-    padding-top: 90px;
-    overflow: hidden;
+.section{
+    padding-top: 95px;
+    background: #e6e6e6;
+    /* padding-left: 20px; */
+    padding-bottom: 30px;
 }
-    .slider figure {
-        position: relative;
-        width: 500%; /* 100% for each picture, 10 pictures = 1000% */
-        margin: 0;
-        left: 0;
-        animation: 40s slider infinite;
-    }
-        .slider figure img {
-            width: 20%; /* 100 / 10 pictures = 10% */
-            height: 350px;
-            float: left;
-        }
-@keyframes slider {
-    0% { left: 0; } /* you must divide 100% fot the amout of images you have */
-    20% { left: 0%; } /* these intermediate steps (7%, 17%, 27%, ... will make the transition speed faster */
-    25% { left: -100%; } /* because my total width: 1000% (10x 100% for 10 images), I will use 10% for each image */
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100%{ left: -400%; }
-    
-}
-.container{
-    margin: 30px;
-    /* margin-top: 50px; */
-}
-
-.row{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.image{
-	background: #50A7FF;
-	position: relative;
-	flex: 1;
-	max-width: 460px;
-	height: 300px;
-	margin: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 6px 8px 2px rgb(95 83 83 / 71%);
-}
-
-.image img{
-	opacity: 0.8;
-	position: relative;
-	vertical-align: top;
-	transition: 0.6s;
-	transition-property: opacity;
-}
-
-.image:hover img{
-	opacity: 1;
-}
-
-.image .details{
-	z-index: 1;
-	position: absolute;
-	top: 0;
-	right: 0;
-	color: #fff;
-	width: 100%;
-	height: 100%;
-}
-
-.image .details h2{
-	text-align: center;
-	font-size: 35px;
-	text-transform: uppercase;
-	font-weight: 300;
-	margin-top: 70px;
-	transition: 0.4s;
-	transition-property: transform;
-}
-
-.image .details h2 span{
-	font-weight: 900;
-}
-
-.image:hover .details h2{
-	transform: translateY(-30px);
-}
-
-.image .details p{
-	margin: 30px 30px 0 30px;
-	font-size: 18px;
-	font-weight: 600;
-	text-align: center;
-	opacity: 0;
-	transition: 0.6s;
-	transition-property: opacity, transform;
-}
-
-.image:hover .details p{
-	opacity: 1;
-	transform: translateY(-40px);
-}
-
-.more{
-	position: absolute;
-	background: rgba(255, 255, 255, 0.8);
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px;
-	bottom: -60px;
-	transition: 0.6s;
-	transition-property: bottom;
-}
-
-.image:hover .more{
-	bottom: 0;
-}
-
-.more .read-more{
-	color: #000;
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.more .read-more span{
-	font-weight: 900; 
-}
-.read-more:hover{
-    color: rgb(205, 207, 216);
-}
-.more .icon-links i{
-	color: #000;
-	font-size: 20px;
-}
-.icon-links h3{
-    color: #000;
-}
-.more .icon-links a:not(:last-child) i{
-	margin-right: 20px;
-}
-
-/* Responsive CSS */
-
-@media (max-width: 1080px){
-	.image{
-		flex: 40%;
-		max-width: 500px;
-	}
-}
-@media (max-width:800px){
-    .image{
-    	flex:100%;
-    	max-width:420px;
-    }
-
-}
-@media (max-width: 400px){
-	.image .details p{
-		font-size: 16px;
-	}
-
-	.more .read-more, .more .icon-links a i{
-		font-size: 18px;
-	}
-}
-
 .footer {
 	width: 100%;
 	background: #00121b;
